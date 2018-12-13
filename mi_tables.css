@@ -14,11 +14,58 @@
 */
 
 /* Table Styles */
+/* the table element has a linear gradien that goes from an rgb color to black then a solid gray 5 pixel border. */
+table {
+    background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+    border: 5px solid gray;
+}
 
+/* the table header and table data all have a solid gray 3 pixel border with a line height of 1.4 em and the padding around the elements with 8 pixels. */
+th,
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+}
 
+/* The table header has a background-color of black and the font color of rgb. The font weight is normal. */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* The table data has font with a color of white and the size is .9 em. The text is also aligned at the top of the cell. */
+td {
+    color: white;
+    font-size: 0.9em;
+    text-align: top;
+}
 
 /* Column Styles */
+/* the col with an id of firstCol has a width of 24% */
+col#firstCol {
+    width: 24%;
+}
 
-
+/* the col with a class of dataCols has a width of 19% */
+col.dataCols {
+    width: 19%;
+}
 
 /* Table Header Styles */
+/* the table head row has a height of 60pixels. */
+thead tr {
+    height: 60px;
+}
+
+/* The table head has an after pseudo type element has a font size od 2em. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* the table head also has a pseudo element but it is not part of the transperant color and it has a font color of black. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+}
